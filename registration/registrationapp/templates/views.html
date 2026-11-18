@@ -1,0 +1,14 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Student Registration</title>
+    </head>
+        <Body>
+            <h1>Student Registration Form</h1>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+            <input type="submit" value="Register">
+        </form>
+    </Body>
+</html>
