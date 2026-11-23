@@ -7,4 +7,5 @@ class RegistrationForm(forms.Form):
     student_age = forms.IntegerField(label='Student Age', min_value=1, max_value=100)
     student_gender = forms.CharField(label='Student Gender', max_length=10)
     student_address = forms.CharField(label='Student Address', max_length=10, widget=forms.Textarea())
+    student_marks = forms.CharField(label ='student marks ')
     

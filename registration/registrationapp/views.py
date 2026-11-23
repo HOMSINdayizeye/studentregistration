@@ -12,6 +12,7 @@ def register(request):
             student_age = form.cleaned_data['student_age']
             student_gender = form.cleaned_data['student_gender']
             student_address = form.cleaned_data['student_address']
+            student_marks = form.cleaned_data['student_marks']
 
             return render(request, 'views.html', {'student_name':'student_name'})
         else:
